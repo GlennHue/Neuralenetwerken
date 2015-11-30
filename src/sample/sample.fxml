@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="733.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ai.neuralController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button id="btnInitialise" mnemonicParsing="false" text="Initialise" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button id="btnStartBackPropagation" mnemonicParsing="false" text="Start backpropagation" />
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <FlowPane alignment="CENTER" prefHeight="40.0" prefWidth="606.0">
+                    <children>
+                        <Label style="-fx-background-color: Red; -fx-border-color: Blue;" text="1.0">
+                            <padding>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                            </padding></Label>
+                    </children>
+                </FlowPane>
+                <FlowPane alignment="CENTER" prefHeight="40.0" prefWidth="606.0">
+                    <children>
+                        <Label style="-fx-background-color: Red; -fx-border-color: Blue;" text="-2.0">
+                            <padding>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                            </padding></Label>
+                    </children>
+                </FlowPane>
+                <FlowPane alignment="CENTER" prefHeight="40.0" prefWidth="606.0">
+                    <children>
+                        <Label style="-fx-background-color: Red; -fx-border-color: Blue;" text="3.0">
+                            <padding>
+                                <Insets bottom="5.0" left="15.0" right="15.0" top="5.0" />
+                            </padding></Label>
+                    </children>
+                </FlowPane>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="269.0" spacing="10.0">
+                    <children>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH11">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding></Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH12">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding></Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH13">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding></Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH14">
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding></Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="269.0" spacing="10.0">
+                    <children>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH11">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH12">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH13">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH14">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="54.0" prefWidth="269.0" spacing="10.0">
+                    <children>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH11">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH12">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH13">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                        <Label style="-fx-border-color: #6E8BE0;" text="IH14">
+                            <padding>
+                                <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <GridPane alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Label" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" />
+                    </children>
+                </GridPane>
+                <GridPane alignment="CENTER">
+                    <children>
+                        <Label text="Label" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" />
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+                <GridPane alignment="CENTER">
+                    <children>
+                        <Label text="Label" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" />
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+                <GridPane alignment="CENTER">
+                    <children>
+                        <Label text="Label" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Label" GridPane.columnIndex="1" />
+                    </children>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="302.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="293.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="40.0" prefWidth="293.0">
+                    <children>
+                        <Label text="Label" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="40.0" prefWidth="302.0">
+            <children>
+                <Label text="Label" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
